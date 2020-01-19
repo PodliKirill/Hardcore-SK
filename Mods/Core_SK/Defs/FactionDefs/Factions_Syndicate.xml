@@ -14,7 +14,7 @@
 		<autoFlee>true</autoFlee>
 		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>Supervisor</leaderTitle>
-		<earliestRaidDays>340</earliestRaidDays>
+		<earliestRaidDays>360</earliestRaidDays>
 		<expandingIconTexture>UI/Icons/Factions/Syndicate</expandingIconTexture>
 		<raidCommonalityFromPointsCurve>
 			<points>

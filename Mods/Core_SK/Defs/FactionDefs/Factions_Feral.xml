@@ -13,7 +13,7 @@
 		<canSiege>false</canSiege>
 		<autoFlee>true</autoFlee>
 		<canStageAttacks>true</canStageAttacks>
-		<earliestRaidDays>80</earliestRaidDays>
+		<earliestRaidDays>140</earliestRaidDays>
 		<raidCommonalityFromPointsCurve>
 			<points>
 				<li>(500, 0.2)</li>
