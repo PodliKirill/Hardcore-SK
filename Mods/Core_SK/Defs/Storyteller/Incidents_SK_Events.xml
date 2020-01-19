@@ -165,7 +165,7 @@
 		<workerClass>SK.Events.IncidentWorker_Zeon</workerClass>
 		<baseChance>0.6</baseChance>
 		<category>ThreatBig</category>
-		<earliestDay>420</earliestDay>
+		<earliestDay>480</earliestDay>
 		<minRefireDays>320</minRefireDays>
 		<minThreatPoints>12000</minThreatPoints>
 	</IncidentDef>
@@ -586,7 +586,7 @@
 		<letterLabel>Bombardment</letterLabel>
 		<letterText>The enemy faction are not pleased with you, their warship will shoot at you from orbit.</letterText>
 		<letterDef>ThreatBig</letterDef>
-		<baseChance>2.5</baseChance>
+		<baseChance>0.5</baseChance>
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>
@@ -627,7 +627,7 @@
 		<letterLabel>Beam strike threat</letterLabel>
 		<letterText>The enemy faction are not pleased with you, their warship will shoot at you from orbit.</letterText>
 		<letterDef>ThreatBig</letterDef>
-		<baseChance>1.3</baseChance>
+		<baseChance>0.3</baseChance>
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>

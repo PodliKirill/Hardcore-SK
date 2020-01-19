@@ -17,7 +17,7 @@
 		<canStageAttacks>true</canStageAttacks>
 		<permanentEnemy>true</permanentEnemy>
 		<leaderTitle>Renegade</leaderTitle>
-		<earliestRaidDays>30</earliestRaidDays>
+		<earliestRaidDays>45</earliestRaidDays>
 		<raidCommonalityFromPointsCurve>
 			<points>
 				<li>(500, 1.2)</li>

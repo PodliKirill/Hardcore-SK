@@ -14,7 +14,7 @@
 		<autoFlee>true</autoFlee>
 		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>General</leaderTitle>
-		<earliestRaidDays>150</earliestRaidDays>
+		<earliestRaidDays>180</earliestRaidDays>
 		<raidCommonalityFromPointsCurve>
 			<points>
 				<li>(500, 0.05)</li>

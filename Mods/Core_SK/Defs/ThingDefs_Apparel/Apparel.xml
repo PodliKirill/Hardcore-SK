@@ -35,6 +35,19 @@
 	</ThingDef>
 
 	<ThingDef Name="ApparelNeoliticSimpleBase" ParentName="SK_ApparelBase" Abstract="True">
+			<recipeMaker>
+			<workSpeedStat>TailoringSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>LeatherworkerTable</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>1</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+		</recipeMaker>
 		<equippedStatOffsets>
 			<Suppressability>-0.03</Suppressability>
 		</equippedStatOffsets>
@@ -62,6 +75,19 @@
 	</ThingDef>
 
 	<ThingDef Name="ArmorNeoliticSimpleBase" ParentName="SK_ApparelBase" Abstract="True">
+			<recipeMaker>
+			<workSpeedStat>TailoringSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>LeatherworkerTable</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>1</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+		</recipeMaker>
 		<equippedStatOffsets>
 			<Suppressability>-0.06</Suppressability>
 		</equippedStatOffsets>
@@ -89,6 +115,19 @@
 	</ThingDef>
 
 	<ThingDef Name="ApparelMedievalSimpleBase" ParentName="SK_ApparelBase" Abstract="True">
+			<recipeMaker>
+			<workSpeedStat>TailoringSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+		</recipeMaker>
 		<equippedStatOffsets>
 			<Suppressability>-0.03</Suppressability>
 		</equippedStatOffsets>
@@ -116,6 +155,20 @@
 	</ThingDef>
 
 	<ThingDef Name="ArmorMedievalSimpleBase" ParentName="SK_ApparelBase" Abstract="True">
+			<recipeMaker>
+			<workSpeedStat>TailoringSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+		</recipeMaker>
 		<equippedStatOffsets>
 			<Suppressability>-0.06</Suppressability>
 		</equippedStatOffsets>
@@ -144,6 +197,19 @@
 	</ThingDef>
 
 	<ThingDef Name="ApparelIndustrialSimpleBase" ParentName="SK_ApparelBase" Abstract="True">
+			<recipeMaker>
+			<workSpeedStat>TailoringSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+		</recipeMaker>
 		<equippedStatOffsets>
 			<Suppressability>-0.06</Suppressability>
 		</equippedStatOffsets>
@@ -171,6 +237,19 @@
 	</ThingDef>
 	
 	<ThingDef Name="ArmorIndustrialSimpleBase" ParentName="SK_ApparelBase" Abstract="True">
+			<recipeMaker>
+			<workSpeedStat>TailoringSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+		</recipeMaker>
 		<equippedStatOffsets>
 			<Suppressability>-0.07</Suppressability>
 		</equippedStatOffsets>
@@ -198,6 +277,19 @@
 	</ThingDef>
 
 	<ThingDef Name="ApparelSpacerSimpleBase" ParentName="SK_ApparelBase" Abstract="True">
+			<recipeMaker>
+			<workSpeedStat>TailoringSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>HyperTailoringBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>15</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+		</recipeMaker>
 		<equippedStatOffsets>
 			<Suppressability>-0.09</Suppressability>
 		</equippedStatOffsets>
@@ -228,6 +320,19 @@
 	</ThingDef>
 
 	<ThingDef Name="ArmorSpacerSimpleBase" ParentName="SK_ApparelBase" Abstract="True">
+			<recipeMaker>
+			<workSpeedStat>TailoringSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>HyperTailoringBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>15</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+		</recipeMaker>
 		<equippedStatOffsets>
 			<Suppressability>-0.11</Suppressability>
 		</equippedStatOffsets>

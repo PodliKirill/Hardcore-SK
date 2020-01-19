@@ -26,9 +26,9 @@
 		<!-- Destroy ammo from mechanoids -->
 		<DestroyMechanoidAmmo>true</DestroyMechanoidAmmo>		
 		<!-- 0.00 - 1.00 Chance to instant destroy ammo while looting -->
-		<ChanceToInstantDestroyAmmo>0.09</ChanceToInstantDestroyAmmo>
+		<ChanceToInstantDestroyAmmo>1</ChanceToInstantDestroyAmmo>
 		<!-- 0.00 - 1.00 Chance to instant destroy item (weapon) while looting -->
-		<ChanceToInstantDestroyEnemyItem>0.04</ChanceToInstantDestroyEnemyItem>
+		<ChanceToInstantDestroyEnemyItem>1</ChanceToInstantDestroyEnemyItem>
 		<!-- 0.00 - 1.00 Chance to damage looted item by deterioration -->
 		<ChanceToDamageEnemyItem>0.25</ChanceToDamageEnemyItem>
 		<!-- 0 - 100 Item take a deterioration damage -->
@@ -53,9 +53,9 @@
 		<!-- Assistant raid points multiplier Suit values: 0.5-1.0 -->
 		<AssistantRaidPointsMultiplier>0.7</AssistantRaidPointsMultiplier>
 		<!-- Enabled Bombardament to assist enemy factions? Default: true -->
-		<EnableBombardament>true</EnableBombardament>
+		<EnableBombardament>false</EnableBombardament>
 		<!-- Enabled Beam strike to assist enemy factions? Default: true -->
-		<EnablePowerBeamStrike>true</EnablePowerBeamStrike>
+		<EnablePowerBeamStrike>false</EnablePowerBeamStrike>
 		
 		
 	</SK.Config>

@@ -50,7 +50,7 @@
 		<pawnSingular>ogre</pawnSingular>
 		<pawnsPlural>ogres</pawnsPlural>
 		<leaderTitle>Clan shaman</leaderTitle>
-		<earliestRaidDays>35</earliestRaidDays>
+		<earliestRaidDays>40</earliestRaidDays>
 		<techLevel>Medieval</techLevel>
 		<raidCommonalityFromPointsCurve>
 			<points>
@@ -86,7 +86,7 @@
 		<pawnSingular>ogre</pawnSingular>
 		<pawnsPlural>ogres</pawnsPlural>
 		<leaderTitle>Clan shaman</leaderTitle>
-		<earliestRaidDays>180</earliestRaidDays>
+		<earliestRaidDays>260</earliestRaidDays>
 		<techLevel>Industrial</techLevel>
 		<raidCommonalityFromPointsCurve>
 			<points>

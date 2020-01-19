@@ -11,7 +11,7 @@
 		<populationEffect>None</populationEffect>
 		<category>ThreatSmall</category>
 		<baseChance>2.4</baseChance>
-		<earliestDay>180</earliestDay>
+		<earliestDay>300</earliestDay>
 		<minRefireDays>50</minRefireDays>
 		<minThreatPoints>8500</minThreatPoints>
 	</IncidentDef>

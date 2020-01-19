@@ -1,44 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+ 
     <ThingCategoryDef>
       <defName>AmmoBalistaBolts</defName>
       <label>balista bolts</label>
       <parent>AmmoNeolithic</parent>
       <iconPath>UI/Icons/ThingCategories/CaliberArrow</iconPath>
     </ThingCategoryDef>
-	
-	<!-- ==================== AmmoSet ========================== -->
-
+     
+    <!-- ==================== AmmoSet ========================== -->
+ 
   <CombatExtended.AmmoSetDef>
     <defName>AmmoSet_Balista</defName>
     <label>balista bolts</label>
     <ammoTypes>
       <Ammo_BalistaBolt>Projectile_BalistaBolt</Ammo_BalistaBolt>
+      <Ammo_BalistaBolt_Explosive>Projectile_BalistaBolt_Explosive</Ammo_BalistaBolt_Explosive>
     </ammoTypes>
   </CombatExtended.AmmoSetDef>
-  
-	<!-- ==================== Ammo ========================== -->
-
+   
+    <!-- ==================== Ammo ========================== -->
+ 
   <ThingDef Class="CombatExtended.AmmoDef" Name="BalistaBallBase" ParentName="NeolithicAmmoBase" Abstract="True">
     <description>A large crossbow-like weapon.</description>
     <thingCategories>
       <li>AmmoBalistaBolts</li>
     </thingCategories>
     <stackLimit>75</stackLimit>
-		<tradeTags>
-		  <li>CE_AutoEnableTrade</li>
-		  <li>CE_AutoEnableCrafting_FueledSmithy</li>
-		  <li>CE_AutoEnableCrafting_ElectricSmithy</li>
-		</tradeTags>
+        <tradeTags>
+          <li>CE_AutoEnableTrade</li>
+          <li>CE_AutoEnableCrafting_FueledSmithy</li>
+          <li>CE_AutoEnableCrafting_ElectricSmithy</li>
+        </tradeTags>
     <statBases>
-		<Mass>2</Mass>
-		<Bulk>2</Bulk>
-		<MaxHitPoints>200</MaxHitPoints>
-    	<Flammability>1</Flammability>
+        <Mass>2</Mass>
+        <Bulk>2</Bulk>
+        <MaxHitPoints>200</MaxHitPoints>
+        <Flammability>1</Flammability>
     </statBases>
   </ThingDef>
-
+ 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="BalistaBallBase">
     <defName>Ammo_BalistaBolt</defName>
     <label>Balista bolt</label>
@@ -49,11 +50,24 @@
     <statBases>
       <MarketValue>0.5</MarketValue>
     </statBases>
-		<ammoClass>BalistaBolt</ammoClass>
+        <ammoClass>BalistaBolt</ammoClass>
   </ThingDef>
-	
-	<!-- ================== Projectiles ================== -->
-	
+   
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BalistaBallBase">
+    <defName>Ammo_BalistaBolt_Explosive</defName>
+    <label>Balista bolt explosive</label>
+    <graphicData>
+      <texPath>Things/Weapons/Melee/Spear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>35</MarketValue>
+    </statBases>
+        <ammoClass>BalistaBolt</ammoClass>
+  </ThingDef>
+     
+    <!-- ================== Projectiles ================== -->
+     
   <ThingDef Name="BaseBallistaBoltProjectile" ParentName="SK_BaseBullet" Abstract="true">
     <graphicData>
       <texPath>Things/Projectile/Pilum</texPath>
@@ -64,18 +78,33 @@
       <speed>90</speed>
     </projectile>
   </ThingDef>
-  
+   
   <ThingDef ParentName="BaseBallistaBoltProjectile">
     <defName>Projectile_BalistaBolt</defName>
     <label>Ballista Bolt</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageAmountBase>50</damageAmountBase>
-	  <armorPenetrationBase>0.7</armorPenetrationBase>
+      <armorPenetrationBase>0.7</armorPenetrationBase>
     </projectile>
   </ThingDef>
-  
-	<!-- ==================== Recipes ========================== -->
-
+   
+  <ThingDef ParentName="BaseBallistaBoltProjectile">
+    <defName>Projectile_BalistaBolt_Explosive</defName>
+    <label>Ballista Bolt explosive</label>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageAmountBase>50</damageAmountBase>
+      <armorPenetrationBase>0.7</armorPenetrationBase>
+      <secondaryDamage>
+        <li>
+            <def>Bomb_Secondary</def>
+            <amount>50</amount>
+        </li>
+      </secondaryDamage>
+    </projectile>
+  </ThingDef>
+   
+    <!-- ==================== Recipes ========================== -->
+ 
   <RecipeDef ParentName="AmmoRecipeNeolithicBase">
     <defName>MakeAmmo_BalistaBolt</defName>
     <label>make metallic balista bolts x10</label>
@@ -113,5 +142,54 @@
       <Ammo_BalistaBolt>10</Ammo_BalistaBolt>
     </products>
   </RecipeDef>
-	
+     
+  <RecipeDef ParentName="AmmoRecipeNeolithicBase">
+    <defName>MakeAmmo_BalistaBolt_Explosive</defName>
+    <label>make explosive balista bolts x10</label>
+    <description>Craft 10 balista explosive bolts.</description>
+    <jobString>Making balista bolts.</jobString>
+    <targetCountAdjustment>10</targetCountAdjustment>
+    <workAmount>1500</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Metallic</li>
+          </categories>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FSX</li>
+            <li>Powder</li>
+          </thingDefs>
+        </filter>
+      </li>
+                 
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <thingDefs>
+        <li>WoodLog</li>
+        <li>FSX</li>
+        <li>Powder</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_BalistaBolt_Explosive>10</Ammo_BalistaBolt_Explosive>
+    </products>
+  </RecipeDef>
+   
 </Defs>

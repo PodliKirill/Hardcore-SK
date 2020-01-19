@@ -17,7 +17,6 @@
 		<defaultDamage>2</defaultDamage>
 		<defaultArmorPenetration>0</defaultArmorPenetration>
 		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
-		<buildingDamageFactor>2</buildingDamageFactor>
 		<explosionHeatEnergyPerCell>2</explosionHeatEnergyPerCell>
 		<explosionCellMote>Mote_BlastOptic</explosionCellMote>
 		<soundExplosion>Explosion_OpticBurst</soundExplosion>
@@ -39,7 +38,7 @@
 		<defaultDamage>3</defaultDamage>
 		<defaultArmorPenetration>0</defaultArmorPenetration>
 		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
-		<buildingDamageFactor>6</buildingDamageFactor>
+		<buildingDamageFactor>2</buildingDamageFactor>
 		<explosionHeatEnergyPerCell>3</explosionHeatEnergyPerCell>
 		<explosionCellMote>Mote_BlastPlasma</explosionCellMote>
 		<soundExplosion>Explosion_PlasmaEXP</soundExplosion>
@@ -186,8 +185,8 @@
 		<armorCategory>Blunt</armorCategory>
 		<defaultDamage>8</defaultDamage>
 		<defaultArmorPenetration>0</defaultArmorPenetration>
-		<buildingDamageFactor>4</buildingDamageFactor>
-		<plantDamageFactor>4</plantDamageFactor>
+		<buildingDamageFactor>1.8</buildingDamageFactor>
+		<plantDamageFactor>1.8</plantDamageFactor>
 		<explosionHeatEnergyPerCell>8</explosionHeatEnergyPerCell>
 		<explosionCellMote>Mote_BlastDry</explosionCellMote>
 		<soundExplosion>Explosion_OpticBurst</soundExplosion>
