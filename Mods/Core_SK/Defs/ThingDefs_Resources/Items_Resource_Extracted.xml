@@ -265,18 +265,6 @@
 			<Bulk>0.2</Bulk>
 		</statBases>
 		<tickerType>Normal</tickerType>
-		<comps>
-			<li Class="CompProperties_Explosive">
-				<explosiveRadius>1.2</explosiveRadius>
-				<explosiveDamageType>Flame</explosiveDamageType>
-				<explosiveExpandPerStackcount>0.05</explosiveExpandPerStackcount>
-				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
-				<wickTicks>
-					<min>65</min>
-					<max>140</max>
-				</wickTicks>
-			</li>
-		</comps>
 		<thingCategories>
 			<li>Coal</li>
 		</thingCategories>
